@@ -4,6 +4,7 @@ Basic async syntax
 """
 import asyncio
 import random
+from typing import List
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -13,7 +14,7 @@ async def wait_random(max_delay: int = 10) -> float:
     return delay
 
 
-async def wait_n(n: int, max_delay: int) -> list:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """Function Documented"""
     delays = []
 
